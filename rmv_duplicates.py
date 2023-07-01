@@ -1,8 +1,8 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+Author: Andrew Hamara
+
+Solution for LeetCode problem 83. Remove Duplicates from Sorted List
+
+
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
 
