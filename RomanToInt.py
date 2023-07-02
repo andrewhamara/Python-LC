@@ -1,6 +1,6 @@
-Author: Andrew Hamara
+# Author: Andrew Hamara
 
-Solution to Leetcode problem 13: Roman to Integer
+# Solution to Leetcode problem 13: Roman to Integer
 
 class Solution:
     def romanToInt(self, s: str) -> int:

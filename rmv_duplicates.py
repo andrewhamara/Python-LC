@@ -1,7 +1,6 @@
-Author: Andrew Hamara
+# Author: Andrew Hamara
 
-Solution for LeetCode problem 83. Remove Duplicates from Sorted List
-
+# Solution for leetcode problem 83. Remove Duplicates from Sorted List
 
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:

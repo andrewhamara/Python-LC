@@ -1,6 +1,6 @@
-Author: Andrew Hamara
+# Author: Andrew Hamara
 
-Solution to LeetCode problem 1. Two Sum
+# Solution to LeetCode problem 1. Two Sum
 
 class solution:
     def twosum(self, nums: List[int], target: int) -> List[int]:
