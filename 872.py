@@ -4,21 +4,21 @@
 
 class Solution:
     def leafSimilar(self, root1:Optional[TreeNode], root2:Optional[TreeNode]) -> bool:
-        if not root1 or not root2:
-            return False
-        def leaves(root):
-            stk = []
-            lvs = []
-            stk.append(root)
+        return self.preorderLeaves(root1) == self.preorderLeaves(root2)
 
-            while stk:
-                node = stk.pop()
-                if not node.left and not node.right:
-                    lvs.append(node.val)
-                else:
-                    if node.left:
-                        stk.append(node.left)
-                    if node.right:
-                        stk.append(node.right)
-            return lvs
-        return leaves(root1) == leaves(root2)
+
+    def preorderLeaves(self, root) -> list[int]:
+        traversalStack = [root]
+        leaves = []
+
+        while traversalStack:
+            root = traversalStack.pop()
+
+            if root:
+                if not root.left and not root.right:
+                    leaves.append(root.val)
+                if root.right:
+                    traversalStack.append(root.right)
+                if root.left:
+                    traversalStack.append(root.left)
+        return leaves
